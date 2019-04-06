@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Custom Theme files -->
+  <!--theme-style-->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!--//theme-style-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords" content="I-wear Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+  <script type="application/x-javascript"> addEventListener("load", function () {
+    setTimeout(hideURLbar, 0);
+  }, false);
+
+  function hideURLbar() {
+    window.scrollTo(0, 1);
+  } </script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <!--fonts-->
+  <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet'
+        type='text/css'>
+  <link href='http://fonts.useso.com/css?family=Montez' rel='stylesheet' type='text/css'>
+  <!--//fonts-->
+  <script src="js/simpleCart.min.js"></script>
+  <!-- start menu -->
+  <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all"/>
+  <script type="text/javascript" src="js/memenu.js"></script>
+  <script>$(document).ready(function () {
+    $(".memenu").memenu();
+  });</script>
+  <!-- /start menu -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- js -->
+
+</head>
+<body>
+<!--header-->
+<div class="header-info">
+  <div class="container">
+    <div class="header-top-in">
+
+      <ul class="support">
+        <li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>975130528@qq.com</a>
+        </li>
+        <li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>18438651132</span>
+        </li>
+      </ul>
+      <ul class=" support-right">
+        <li id="user"></li>
+
+        <li><a href="register.html"><i class="glyphicon glyphicon-lock" class="tele"> </i>立即注册</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<div class="header header5">
+  <div class="header-top">
+
+    <div class="header-bottom">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html">GoBuy-<span>Phone</span></a></h1>
+        </div>
+
+
+        <div class="top-nav">
+          <ul class="memenu skyblue">
+            <li><a href="index.html">首页</a></li>
+            <li class="grid"><a href="#">商品</a>
+              <div class="mepanel">
+                <div class="row">
+                  <div class="col1 me-one">
+                    <h4>分类</h4>
+                    <ul id="category">
+                      <!--品牌-->
+                    </ul>
+                  </div>
+                  <div class="col1 me-one">
+                    <h4>适合年龄</h4>
+                    <ul>
+                      <li><a href="product.html">婴幼儿</a></li>
+                      <li><a href="product.html">青少年</a></li>
+                      <li><a href="product.html">成人</a></li>
+                      <li><a href="product.html">老年</a></li>
+                    </ul>
+                  </div>
+                  <div class="col1 me-one">
+                    <h4>其他配件</h4>
+                    <ul>
+                      <li><a href="product.html">地图</a></li>
+                      <li><a href="product.html">地球仪</a></li>
+                      <li><a href="product.html">耳机</a></li>
+                      <li><a href="product.html">学习机</a></li>
+                      <li><a href="product.html">点读机</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="grid"><a href="contact.html">联系我们</a>
+
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!---->
+        <div class="cart box_1">
+          <a href="checkout.html">
+            <h3>
+              <div class="total">
+                <span class="simpleCart_total"> </span> (<span id="simpleCart_quantity"
+                                                               class="simpleCart_quantity"> </span>)
+              </div>
+              <img src="images/cart2-2.png" alt=""/></h3>
+          </a>
+          <p><a href="javascript:;" class="simpleCart_empty">清空购物车</a></p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <!---->
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+</div>
+<!---->
+<div class="back">
+  <h2>购物车</h2>
+</div>
+<!---->
+<div class="product">
+  <div class="container">
+    <div class="col-md-3 product-price">
+
+
+      <!---->
+      <div class="product-bottom">
+        <div class="of-left-in">
+          <h3 class="best">关注最多</h3>
+        </div>
+        <div id="hotProduct"></div>
+      </div>
+      <div class=" per1">
+        <a href="single.html"><img class="img-responsive" src="images/pi9.jpg" alt="">
+          <div class="six1">
+            <h4>DISCOUNT</h4>
+            <p>Up to</p>
+            <span>20%</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!---->
+    <div class="col-md-9 product-price1">
+      <div class="check-out">
+
+        <div class=" cart-items">
+          <h3>填写订单</h3>
+          <script>$(document).ready(function (c) {
+            $('.close1').on('click', function (c) {
+              $('.cart-header').fadeOut('slow', function (c) {
+                $('.cart-header').remove();
+              });
+            });
+          });
+          </script>
+          <script>$(document).ready(function (c) {
+            $('.close2').on('click', function (c) {
+              $('.cart-header1').fadeOut('slow', function (c) {
+                $('.cart-header1').remove();
+              });
+            });
+          });
+          </script>
+
+          <div class="in-check">
+            <ul class="unit">
+
+              <div class="clearfix"></div>
+            </ul>
+            <form action="#" method="post" class="form-horizontal" id="buy"
+                  enctype="multipart/form-data">
+              <ul class="cart-header">
+                <span>收件人姓名 </span>
+                <input type="text" id="buyerName">
+                <span>收件人电话 </span>
+                <input type="text" id="buyerPhone">
+                <span>收件人地址 </span>
+                <input type="text" id="address">
+              </ul>
+            </form>
+          </div>
+          <button class="label label-info" onclick="buyProduct()">确认下单</button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!---->
+<div class="bottom-grid1">
+
+  <div class="fit1">
+    <h3>购物愉快！</h3>
+    <p>这是买卖二手商品的专业平台！</p>
+  </div>
+</div>
+<!---->
+<div class="footer">
+
+  <p class="footer-class">Copyright &copy; 小易闲置物品交易平台 2019-NOW</p>
+
+</div>
+<!---->
+<script type="text/javascript">
+  $(document).ready(function () {
+    /*
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+    */
+    $().UItoTop({easingType: 'easeOutQuart'});
+  });
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover"
+                                                            style="opacity: 1;"> </span></a>
+<!---->
+<!---->
+</body>
+<script>
+  $(document).ready(function () {
+    <!--关注最多商品信息-->
+    $.ajax({
+      type: "GET",
+      url: "product/getHotProduct",//路径
+      dataType: "json",
+      success: function (data) {//返回数据根据结果进行相应的处理
+        var data = data.data;
+        var hotProduct = "";
+        var length = data.length;
+        if (length > 3) {
+          for (var i = 0; i < 3; i++) {
+            hotProduct += '<div class="product-go"><div class=" fashion-grid"><a href="#"><img class="img-responsive " src="'
+                + data[i].mainImage
+                + '" alt=""></a></div><div class=" fashion-grid1"><h6 class="best2"><a href="#">'
+                + data[i].brand + '</a></h6><span class=" price-in1"><small>￥' + data[i].oldPrice
+                + '</small> ￥' + data[i].price + '</span></div><div class="clearfix"></div></div>';
+          }
+        } else {
+          for (var i = 0; i < length; i++) {
+            hotProduct += '<div class="product-go"><div class=" fashion-grid"><a href="#"><img class="img-responsive " src="'
+                + data[i].mainImage
+                + '" alt=""></a></div><div class=" fashion-grid1"><h6 class="best2"><a href="#">'
+                + data[i].brand + '</a></h6><span class=" price-in1"><small>￥' + data[i].oldPrice
+                + '</small> ￥' + data[i].price + '</span></div><div class="clearfix"></div></div>';
+          }
+        }
+
+        $("#hotProduct").html('').append(hotProduct);
+      }
+    });
+  })
+</script>
+<script>
+  $(document).ready(function () {
+    var user = "";
+    if (localStorage.getItem('user_name') == null) {
+      user = '<a href="account.html"><i class="glyphicon glyphicon-user" class="men"> </i>登录</a>';
+    } else {
+      user = '<a href="mine.html"><i class="glyphicon glyphicon-user" class="men"> '
+          + localStorage.getItem("user_name") + '</i></a><a onclick="logout()">退出</a>';
+    }
+
+    $("#user").html('').append(user);
+  })
+</script>
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      type: "GET",
+      url: "category/getCategoryList",//路径
+      dataType: "json",
+      success: function (data) {//返回数据根据结果进行相应的处理
+        var data = data.data;
+        var category = "";
+        first = '<li><a href="product.html">全部</a></li>';
+        for (var i = 0; i < data.length; i++) {
+          category += '<li><a href="product.html?categoryId=' + data[i].id + '">' + data[i].realName
+              + '</a></li>';
+        }
+        $("#category").html('').append(first).append(category);
+      }
+    });
+  })
+</script>
+<script>
+  function buyProduct() {
+    var productIds = localStorage.getItem('productIds');
+    var userId = localStorage.getItem('user_id');
+    var address = document.getElementById('address').value;
+    var buyerName = document.getElementById('buyerName').value;
+    var buyerPhone = document.getElementById('buyerPhone').value;
+
+    $.ajax({
+      type: "POST",
+      url: "order/addOrder",//路径
+      data: {
+        "productIds": productIds,
+        "address": address,
+        "userId": userId,
+        "buyerName": buyerName,
+        "buyerPhone": buyerPhone
+      },
+      traditional: true,
+      success: function (data) {//返回数据根据结果进行相应的处理
+        if (data.code == 0) {
+          swal("购买成功！", "", "success");
+          setTimeout(window.location.href = 'index.html', 5000);
+        } else {
+          swal("购买失败！", "", "error");
+        }
+      }
+    });
+
+  }
+</script>
+<script>
+  function logout() {
+    localStorage.clear();
+    window.location.reload();
+  }
+</script>
+</html>
